@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ItemsToSellFragment">
+
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/purple_round_shape"
+        android:layout_margin="5dp"
+        android:padding="3dp"
+        >
+        <EditText
+            android:id="@+id/search_bar_EditTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="85"
+            android:autofillHints=""
+            android:inputType="text"
+            android:hint="@string/what_do_you_want_to_sell"
+            android:drawableStart="@drawable/ic_search"
+
+            />
+        <ImageView
+            android:id="@+id/QRreaderBtn"
+            android:layout_width="0dp"
+            android:layout_weight="15"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bar_scanner"
+            android:contentDescription="bard code"
+
+          />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemListRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_below="@id/headerLayout"
+
+
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".fragments.ReportFragment">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/lowStocksValContainer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/gray_round_shape"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/txtLowStockLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/low_stock_inventory"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtLowStocksValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtLowStockLabel"
+            android:layout_marginTop="5dp"
+            android:text="@string/_0"
+            android:textColor="@color/RED"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/remainingStocksContainer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/gray_round_shape"
+        android:padding="5dp"
+
+        android:layout_below="@+id/lowStocksValContainer"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/txtRemainingStockLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remaining_stocks"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/remainingStocksValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtRemainingStockLabel"
+            android:layout_marginTop="5dp"
+            android:text="0"
+            android:textColor="@color/green"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/expiredItemsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/gray_round_shape"
+            android:padding="5dp"
+            android:layout_below="@+id/remainingStocksContainer"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                android:id="@+id/nearExpiryLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/near_expiry_items"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/ExpiryItemsValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nearExpiryLabel"
+                android:layout_marginTop="5dp"
+                android:text="0"
+                android:textColor="@color/RED"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/dateSelectorUI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_round_shape"
+        android:padding="2dp"
+        android:layout_below="@id/expiredItemsContainer"
+        android:layout_marginTop="7dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_arrow" />
+
+        <TextView
+            android:id="@+id/daySelectorIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:text="@string/today"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_forward_arrow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/totalSalesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/dateSelectorUI"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/gray_round_shape"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txtTtlSaleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_sales"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/totalSalesValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTtlSaleLabel"
+            android:layout_marginTop="5dp"
+            android:text = ""
+            android:textColor="@color/my_color"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profitContainer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/totalSalesContainer"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/gray_round_shape"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txtProfitLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profit"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/totalProfitValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtProfitLabel"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="@color/my_color"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/noOfSalesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/profitContainer"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/gray_round_shape"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txtSalesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number_of_sales"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/salesCountValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtSalesLabel"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="@color/my_color"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/taxContainer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/noOfSalesContainer"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/gray_round_shape"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txtTaxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_tax"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/totalTaxValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTaxLabel"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="@color/my_color"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

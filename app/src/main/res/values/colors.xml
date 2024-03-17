@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_add_item_background">#FFFFFF</color>
+    <color name="ic_launcher_background">#000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="green">#00EA61</color>
+    <color name="teal_200">#1C1FFB</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="my_color">#3A49B6</color>
+    <color name="my_card_view">#E8E5E9</color>
+    <color name="RED">#D50000</color>
+</resources>

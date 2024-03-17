@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "486681089974",
+    "project_id": "cloud-pos-application",
+    "storage_bucket": "cloud-pos-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486681089974:android:8d7795b612af8799c19317",
+        "android_client_info": {
+          "package_name": "com.mikucode.mymezgebcloudposapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486681089974-r5lavdc0qntirgj40q78uputdeq0c7pa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxpY0U6ypLmtlTl4BXNLUjkzLRjBsN8d8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486681089974-r5lavdc0qntirgj40q78uputdeq0c7pa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

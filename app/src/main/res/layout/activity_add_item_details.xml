@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageItemDetails">
+
+    <LinearLayout
+        android:id="@+id/itemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/purple_round_shape"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/ItemNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/editBusinessName"
+            android:text="@string/item_name"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ex_apple"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:autofillHints=""
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/purple_round_shape"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_below="@+id/itemName">
+
+        <TextView
+            android:id="@+id/itemCategoryTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/editBusinessName"
+            android:text="@string/category"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/editItemCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="90"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:padding="5dp"
+            android:background="@drawable/gray_round_shape"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_drop"
+            android:contentDescription="dropDown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sellBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/purple_round_shape"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_below="@+id/Category">
+
+        <TextView
+            android:id="@+id/sellByOptTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/editBusinessName"
+            android:text="@string/sell_by"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/sellByOpt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="90"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:padding="5dp"
+            android:background="@drawable/gray_round_shape"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_drop"
+            android:contentDescription="dropDown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/simpleAdvancedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/purple_round_shape"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_below="@+id/sellBy">
+
+        <android.widget.Button
+            android:id="@+id/simpleMode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/editBusinessName"
+            android:text="@string/simple_mode"
+            android:textColor="@color/black"
+            android:layout_weight="50"
+            android:background="@drawable/gray_round_shape"/>
+
+        <android.widget.Button
+            android:id="@+id/advancedMode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="@string/adv_mode"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/gray_round_shape" />
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/simpleAdvancedLayout">
+    <FrameLayout
+        android:id="@+id/frameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</ScrollView>
+
+
+</RelativeLayout>

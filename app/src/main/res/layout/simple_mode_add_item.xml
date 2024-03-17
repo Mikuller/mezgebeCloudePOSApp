@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/itemValueDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/gray_round_shape"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:baselineAligned="false">
+<RelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="33">
+    <TextView
+        android:id="@+id/sellingPriceTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/selling_price"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:id="@+id/sellingPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sellingPriceTxt"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/purple_round_shape"
+        android:padding="5dp"
+        android:inputType="numberDecimal" />
+
+</RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="33">
+            <TextView
+                android:id="@+id/costPriceTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cost_price"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:id="@+id/costPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/costPriceTxt"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/purple_round_shape"
+                android:padding="5dp"
+                android:inputType="numberDecimal"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="33">
+            <TextView
+                android:id="@+id/stockValueTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/stock_avail"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:id="@+id/stockValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stockValueTxt"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/purple_round_shape"
+                android:padding="5dp"
+                android:inputType="number"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemValueDetail"
+        android:text="@string/update"
+        android:textColor="@color/white"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:background="@drawable/purple_round_shape"
+        />
+    <Button
+        android:id="@+id/addItemBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemValueDetail"
+        android:layout_centerHorizontal="true"
+        android:text="@string/add_item"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/purple_round_shape"/>
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemValueDetail"
+        android:layout_alignParentEnd="true"
+        android:text="@string/delete"
+        android:textColor="@color/white"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:background="@drawable/purple_round_shape"
+        />
+
+</RelativeLayout>

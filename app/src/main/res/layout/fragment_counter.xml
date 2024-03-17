@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CounterFragment"
+    android:padding="8dp"
+    android:id="@+id/parentLayout"
+    android:background="@color/my_color">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addSalesCV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        >
+        <TextView
+            android:id="@+id/addNewTxt"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:text="@string/new_sales"
+            android:textColor="@color/my_color"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            app:drawableTopCompat="@drawable/ic_add_black_big"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/noPendingSaleTxt"
+        android:drawablePadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:paddingTop="10dp"
+        android:text="@string/no_pending_sales"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:drawableTopCompat="@drawable/ic_pending"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"
+        />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/salesUI">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/salesItemsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addNewItemBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/salesItemsList"
+            android:text="@string/add_new_item"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:id="@+id/txtGrandTtl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addNewItemBtn"
+            android:text="@string/grand_total"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:id="@+id/grandTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addNewItemBtn"
+            android:text="@string/_0_00"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clearBtn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtGrandTtl"
+            android:text="@string/clear"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/chargeBtn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtGrandTtl"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/gray_round_shape"
+            android:text="@string/charge"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</ScrollView>
+
+
+
+
+</RelativeLayout>

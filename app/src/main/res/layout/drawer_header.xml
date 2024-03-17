@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="310dp"
+   >
+    <RelativeLayout
+        android:id="@+id/headerTop"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/my_color"
+        >
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v_1_0"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/appName"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/businessSelector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerTop"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+       >
+
+        <ImageView
+            android:id="@+id/businessIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_add_business_24"
+            android:contentDescription="business_icon" />
+        <TextView
+            android:id="@+id/editBusiness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/manage_business"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+
+            />
+        <TextView
+            android:id="@+id/businessName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business Name"
+            android:layout_below="@+id/businessIcon"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/EditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/businessSelector"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="@color/my_card_view">
+
+        <TextView
+            android:id="@+id/businessOwnerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="some random dude"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/emailTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="someRandomDude@gmail.com"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_below="@+id/businessOwnerName"
+
+            />
+
+        <TextView
+            android:id="@+id/userPrivilege"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/business_owner"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+           android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/EditProfile"
+        android:padding="2dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/switchBusiness"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/my_color"
+            android:text="@string/switch_business"
+            android:layout_weight="50"
+            />
+        <Button
+            android:id="@+id/createBusiness"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/my_color"
+            android:text="@string/crt_business"
+            android:layout_toRightOf="@id/switchBusiness"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="50"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ethiopia_regions">
+        <item>Addis Ababa</item>
+        <item>Afar</item>
+        <item>Amhara</item>
+        <item>Benishangul-Gumuz</item>
+        <item>Dire Dawa</item>
+        <item>Gambela</item>
+        <item>Harari</item>
+        <item>Oromia</item>
+        <item>Somali</item>
+        <item>Southern Nations, Nationalities, and Peoples\' Region (SNNPR)</item>
+        <item>Tigray</item>
+    </string-array>
+
+    <string-array name="addis_ababa_cities">
+        <item>Addis Ababa</item>
+    </string-array>
+
+    <string-array name="afar_cities">
+        <item>Semera</item>
+        <item>Asebo</item>
+        <item>Afdera</item>
+        <item>Aysaita</item>
+        <item>Habru</item>
+        <item>Mille</item>
+        <item>Gewane</item>
+    </string-array>
+
+    <string-array name="amhara_cities">
+        <item>Bahir Dar</item>
+        <item>Gonder</item>
+        <item>Dessie</item>
+        <item>Debre Sina</item>
+        <item>Lalibela</item>
+        <item>Kemise (Kemisie)</item>
+        <item>Sekota (Soqota)</item>
+        <item>Weldiya</item>
+        <item>Debre Tabor</item>
+        <item>Debre Markos (Debre Marqos)</item>
+    </string-array>
+
+    <string-array name="Benishangul_Gumuz_cities">
+        <item>Asosa</item>
+        <item>Kamashi</item>
+        <item>Metekel</item>
+    </string-array>
+    <string-array name="Dire_Dawa_cities">
+        <item>Dire Dawa</item>
+    </string-array>
+
+    <string-array name="Gambela_cities">
+        <item>Gambela</item>
+    </string-array>
+
+    <string-array name="Harari_cities">
+        <item>Harar </item>
+    </string-array>
+    <string-array name="Oromia_cities">
+        <item>Jimma</item>
+        <item>Bishoftu</item>
+        <item>Dodola</item>
+        <item>Adama</item>
+        <item>Shashamane</item>
+        <item>Nekemt</item>
+        <item>Ambo</item>
+        <item>Wolega</item>
+    </string-array>
+    <string-array name="Somali_cities">
+        <item>Jijiga</item>
+        <item>Degehabur</item>
+        <item>Kebri Beyah</item>
+        <item>Gode</item>
+        <item>Ferfer</item>
+    </string-array>
+    <string-array name="SNNP_cities">
+        <item>Hawassa</item>
+        <item>Arba Minch</item>
+        <item>Jinka</item>
+        <item>Sodo</item>
+        <item>Wendo</item>
+    </string-array>
+    <string-array name="Tigray_cities">
+        <item>Mekele</item>
+        <item>Axum</item>
+        <item>Adigrat</item>
+        <item>Adwa</item>
+        <item>Alamata</item>
+    </string-array>
+    <!-- Add arrays for other regions and their cities -->
+
+</resources>

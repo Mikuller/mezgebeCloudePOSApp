@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addBusinessParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageBusiness">
+
+    <RelativeLayout
+        android:id="@+id/Bname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/purple_round_shape"
+        android:padding="5dp"
+        >
+        <TextView
+            android:id="@+id/businessNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/business_name"
+            android:textColor="@color/black"
+            android:labelFor="@+id/editBusinessName"
+            />
+        <EditText
+            android:id="@+id/editBusinessName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@+id/businessNameTxt"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:autofillHints="" />
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/purple_round_shape"
+            android:padding="5dp"
+           android:layout_below="@+id/Bname"
+            >
+            <TextView
+                android:id="@+id/businessAddTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textColor="@color/black"
+                android:labelFor="@+id/rgnAndcty"
+                android:layout_marginBottom="3dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/rgnAndcty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/businessAddTxt">
+
+                <TextView
+                    android:id="@+id/editBusinessAddressRegion"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="50"
+                    android:hint="@string/region"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@drawable/gray_round_shape"/>
+
+            <TextView
+                android:id="@+id/editBusinessAddressCity"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="50"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:hint="@string/city"
+                android:padding="5dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/gray_round_shape"
+                />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/scndLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/location"
+        android:baselineAligned="false">
+        <RelativeLayout
+            android:id="@+id/businessTypeLO"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/purple_round_shape"
+            android:padding="5dp"
+            android:layout_weight="50"
+            >
+            <TextView
+                android:id="@+id/businessTypeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/business_type"
+                android:textColor="@color/black"
+                android:labelFor="@+id/editBusinessName"
+                />
+            <TextView
+                android:id="@+id/editBusinessType"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/businessTypeTxt"
+                android:textColor="@color/black"
+                android:layout_marginTop="3dp"
+                android:padding="3dp"
+                android:inputType="none"
+                android:background="@drawable/gray_round_shape"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/purple_round_shape"
+            android:padding="5dp"
+            android:layout_weight="50"
+            >
+            <TextView
+                android:id="@+id/businessCurrencyTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/currency"
+                android:textColor="@color/black"
+                android:labelFor="@+id/editBusinessName"
+                />
+            <TextView
+                android:id="@+id/editBusinessCurrency"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/businessCurrencyTxt"
+                android:textColor="@color/black"
+                android:layout_marginTop="3dp"
+                android:padding="3dp"
+                android:inputType="none"
+                android:background="@drawable/gray_round_shape"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lastLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/scndLinear"
+        android:baselineAligned="false">
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lastRelative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastLinear"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <TextView
+            android:id="@+id/agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/i_agree_with_terms_and_agreement"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@+id/checkbox"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastRelative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/delete"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/button_shape"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+
+        />
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastRelative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text = "@string/update"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/button_shape"
+        />
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastRelative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/button_shape"
+        />
+
+
+</RelativeLayout>

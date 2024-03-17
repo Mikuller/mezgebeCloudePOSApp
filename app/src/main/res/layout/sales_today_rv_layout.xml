@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gray_round_shape"
+    android:layout_margin="3dp"
+    android:padding="3dp">
+    <TextView
+        android:id="@+id/paymentMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Cash"
+        android:layout_marginEnd="5dp"
+        android:textStyle="bold"
+        android:lines="1"
+        />
+    <TextView
+        android:id="@+id/numberOfItemsTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@+id/paymentMode"
+        android:textColor="@color/my_color"
+        android:layout_marginEnd="5dp"
+        android:text="4 items"
+        android:gravity="bottom"
+        />
+
+    <TextView
+        android:id="@+id/unitPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymentMode"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/numberOfItemsTxt"
+        android:text="2 hours ago"
+        android:textSize="12sp"
+        android:textStyle="italic|normal" />
+
+    <TextView
+        android:id="@+id/TotalItemSellingPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/paymentMode"
+        android:text="@string/birr_0_00"
+        />
+    <RelativeLayout
+        android:id="@+id/itemsSoldList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TotalItemSellingPrice"
+        android:layout_marginTop="5dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/totalItemsSoldRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:padding="2dp"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
